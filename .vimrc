@@ -20,6 +20,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tomasr/molokai'
 Plugin 'scrooloose/syntastic'
+Plugin 'mfukar/robotframework-vim'
 
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
@@ -51,7 +52,7 @@ set encoding=utf-8
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Invoke ctrlp with opentas_ft as starting directory
-let g:ctrlp_cmd = 'CtrlP ~/opentas_ft'
+let g:ctrlp_cmd = 'CtrlPCurWD'
 
 " Search in regexp (not fuzzy) mode by default (can be toggled with <c-r>)
 let g:ctrlp_regexp = 1
@@ -154,4 +155,3 @@ set ignorecase
 "nnoremap <silent> <F8> :TlistOpen<CR>
 nnoremap <silent> <F9> :Gblame<CR>
 nnoremap gp :tabp<CR>
-execute pathogen#infect()
